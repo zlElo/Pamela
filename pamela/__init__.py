@@ -1,1 +1,1 @@
-from .app import Pamela
+from .app import Pamela, Session
