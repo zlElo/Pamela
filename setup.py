@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='pamela',
+    name='pamela-lib',
     packages=find_packages(include=['pamela']),
     description='Pamela is a python library to simplify API usage in programs',
     long_description=long_description,
