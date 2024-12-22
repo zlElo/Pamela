@@ -23,5 +23,26 @@
 </ul><h2>Setup</h2>
 <hr><p>You can install Pamela in two ways: via PyPi or the setup.py file.</p><h5>Steps</h5><ul>
 <li>pip install pamela</li>
+</ul><h2>Code examples (simple)</h2>
+```py
+# import pamela with all classes
+from pamela import Pamela, Session
+
+# create pamela instance
+pamela = Pamela()
+
+# create session with pamela
+session1 = Session.create("address", "username", "password")
+
+# status of session
+status_session = Session.status(address="address", session=session1)
+
+# receive data with session
+answer = pamela.receive_data(address="address", session=session1)
+
+# receive data with no credentials
+answer = pamela.receive_data(address="address")
+```
+
 </ul><h2>Contact</h2>
 <hr><p><span style="margin-right: 30px;"></span><a href="https://github.com/zlElo"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
