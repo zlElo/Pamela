@@ -49,7 +49,7 @@ response = pamela.receive_data(address="address", session=session1)
 response = pamela.receive_data(address="address")
 
 # send data with session
-response = pamela.send_data(address="address", session=session1)
+response = pamela.send_data(address="address", session=session1, data="123")
 
 # send data with no credentials
 response = pamela.send_data(address="address", data="123")
