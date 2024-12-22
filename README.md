@@ -1,29 +1,34 @@
-<h1>Pamela</h1>
-<hr><p>Pamela is a python library to simplify API usage in programs</p><h2>General Information</h2>
-<hr><ul>
-<li>Pamela is a python library to simplify API usage in programs. It has different features to optimize the workflow with APIs.</li>
-</ul><ul>
-<li>API usage in programs is sometimes very annoying. To optimize all things connected with APIs, Pamela is your helper!</li>
-</ul><h2>Technologies Used</h2>
-<hr><ul>
-<li>Python</li>
-</ul><ul>
-<li>Requests</li>
-</ul><h2>Features</h2>
-<hr><ul>
-<li>Receive data</li>
-</ul><ul>
-<li>Create sessions</li>
-</ul><ul>
-<li>Get status of session</li>
-</ul><ul>
-<li>Choose file format</li>
-</ul><ul>
-<li>Save response to json</li>
-</ul><h2>Setup</h2>
-<hr><p>You can install Pamela in two ways: via PyPi or the setup.py file.</p><h5>Steps</h5><ul>
-<li>pip install pamela</li>
-</ul><h2>Code examples (simple)</h2>
+# Pamela
+Pamela is a python library to simplify API usage in programs
+
+## General Information
+- Pamela is a python library to simplify API usage in programs. It has different features to optimize the workflow with APIs.
+- API usage in programs is sometimes very annoying. To optimize all things connected with APIs, Pamela is your helper!
+  
+## Technologies Used
+- Python
+- Requests
+  
+## Features
+- Receive data
+- Create sessions
+- Get status of session
+- Choose file format
+
+## Installation
+```bash
+pip install pamela
+```
+
+or
+
+```bash
+git clone github.com/zlElo/Pamela.git
+cd Pamela
+pip install .
+```
+
+## Code examples (simple)
 ```py
 # import pamela with all classes
 from pamela import Pamela, Session
