@@ -17,7 +17,7 @@ Pamela is a python library to simplify API usage in programs
 
 ## Installation
 ```bash
-pip install pamela
+pip install pamela-lib
 ```
 
 or
