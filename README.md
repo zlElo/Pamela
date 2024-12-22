@@ -43,8 +43,14 @@ session1 = Session.create("address", "username", "password")
 status_session = Session.status(address="address", session=session1)
 
 # receive data with session
-answer = pamela.receive_data(address="address", session=session1)
+response = pamela.receive_data(address="address", session=session1)
 
 # receive data with no credentials
-answer = pamela.receive_data(address="address")
+response = pamela.receive_data(address="address")
+
+# send data with session
+response = pamela.send_data(address="address", session=session1)
+
+# send data with no credentials
+response = pamela.send_data(address="address", data="123")
 ```

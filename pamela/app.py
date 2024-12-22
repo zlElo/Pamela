@@ -78,6 +78,21 @@ class Pamela:
             return data
         else:
             return None
+        
+    def send_data(self, address, data=None, session=None, username=None, password=None, parameters=None, headers=None, cookies=None, files=None, timeout=None, allow_redirects=True, proxies=None, hooks=None, stream=None, verify=None, cert=None):
+        if session:
+            response = session.post(address, data=data, params=parameters, headers=headers, cookies=cookies, files=files, timeout=timeout, allow_redirects=allow_redirects, proxies=proxies, hooks=hooks, stream=stream, verify=verify, cert=cert)
+            return response
+
+        # if the session didn't work, use a regular request
+        if username and password:
+            auth = requests.auth.HTTPBasicAuth(username, password)
+            response = requests.post(address, data=data, auth=auth, params=parameters, headers=headers, cookies=cookies, files=files, timeout=timeout, allow_redirects=allow_redirects, proxies=proxies, hooks=hooks, stream=stream, verify=verify, cert=cert)
+        else:
+            response = requests.post(address, data=data, params=parameters, headers=headers, cookies=cookies, files=files, timeout=timeout, allow_redirects=allow_redirects, proxies=proxies, hooks=hooks, stream=stream, verify=verify, cert=cert)
+            
+        return response
+        
 
 class Session:
     def __init__(self):
