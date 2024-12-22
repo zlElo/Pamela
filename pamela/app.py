@@ -50,6 +50,7 @@ class Pamela:
         data : dict or str
             The response data in the specified format.
         """
+        
         if session:
             response = session.get(address, params=parameters, headers=headers, cookies=cookies, files=files, timeout=timeout, allow_redirects=allow_redirects, proxies=proxies, hooks=hooks, stream=stream, verify=verify, cert=cert)
 
@@ -123,6 +124,6 @@ class Session:
         status_code : int
             The HTTP status code of the response.
         """
-        
+
         response = session.post(address)
         return response.status_code
