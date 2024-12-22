@@ -43,3 +43,6 @@ class Session:
         session.post(address)
         return session
     
+    def status(address, session):
+        response = session.post(address)
+        return response.status_code
