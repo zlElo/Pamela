@@ -48,6 +48,3 @@ answer = pamela.receive_data(address="address", session=session1)
 # receive data with no credentials
 answer = pamela.receive_data(address="address")
 ```
-
-</ul><h2>Contact</h2>
-<hr><p><span style="margin-right: 30px;"></span><a href="https://github.com/zlElo"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
